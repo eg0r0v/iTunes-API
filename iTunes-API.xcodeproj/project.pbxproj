@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01454FA8221AF55700443833 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FA7221AF55700443833 /* AppDelegate.m */; };
+		01454FAE221AF55700443833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01454FAC221AF55700443833 /* Main.storyboard */; };
+		01454FB0221AF55B00443833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01454FAF221AF55B00443833 /* Assets.xcassets */; };
+		01454FB3221AF55B00443833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01454FB1221AF55B00443833 /* LaunchScreen.storyboard */; };
+		01454FB6221AF55B00443833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FB5221AF55B00443833 /* main.m */; };
+		01454FC4221D4F9700443833 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FC3221D4F9700443833 /* SearchResultsViewController.m */; };
+		01454FC8221D4FB200443833 /* SearchSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FC6221D4FB200443833 /* SearchSectionTableViewCell.m */; };
+		01454FC9221D4FB200443833 /* SearchSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01454FC7221D4FB200443833 /* SearchSectionTableViewCell.xib */; };
+		01454FCC221D6C1100443833 /* SearchResultsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FCB221D6C1100443833 /* SearchResultsService.m */; };
+		01454FCF221D970100443833 /* MediaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FCE221D970100443833 /* MediaObject.m */; };
+		01454FD3221D98D500443833 /* MediaObjectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FD1221D98D500443833 /* MediaObjectCollectionViewCell.m */; };
+		01454FD4221D98D500443833 /* MediaObjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01454FD2221D98D500443833 /* MediaObjectCollectionViewCell.xib */; };
+		01454FD9221D9FC900443833 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FD8221D9FC900443833 /* Movie.m */; };
+		01454FDC221D9FDA00443833 /* MusicTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FDB221D9FDA00443833 /* MusicTrack.m */; };
+		01454FDF221DA40500443833 /* SearchSectionCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FDE221DA40500443833 /* SearchSectionCellViewModel.m */; };
+		01454FE2221DA46800443833 /* BaseCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FE1221DA46800443833 /* BaseCellViewModel.m */; };
+		01454FE6221DC2DC00443833 /* SearchResultsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FE5221DC2DC00443833 /* SearchResultsTableViewModel.m */; };
+		01454FEA221EDCA800443833 /* MediaObjectCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FE9221EDCA800443833 /* MediaObjectCellViewModel.m */; };
+		01454FED221FE78F00443833 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FEC221FE78F00443833 /* SettingsTableViewController.m */; };
+		01454FF1221FE7D300443833 /* SettingsAvatarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FEF221FE7D300443833 /* SettingsAvatarTableViewCell.m */; };
+		01454FF2221FE7D300443833 /* SettingsAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01454FF0221FE7D300443833 /* SettingsAvatarTableViewCell.xib */; };
+		01454FF5221FE85F00443833 /* SettingsAvatarCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FF4221FE85F00443833 /* SettingsAvatarCellViewModel.m */; };
+		01454FF8221FE98600443833 /* SettingsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01454FF7221FE98600443833 /* SettingsTableViewModel.m */; };
+		01455007222019C700443833 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 01455006222019C700443833 /* Constants.m */; };
+		2C909C40486C75AC2E48EA3E /* Pods_iTunes_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E153955C9F746CDF52FEF /* Pods_iTunes_API.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01454FA3221AF55700443833 /* iTunes-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01454FA6221AF55700443833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01454FA7221AF55700443833 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01454FAD221AF55700443833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01454FAF221AF55B00443833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01454FB2221AF55B00443833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01454FB4221AF55B00443833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01454FB5221AF55B00443833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01454FC2221D4F9700443833 /* SearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		01454FC3221D4F9700443833 /* SearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		01454FC5221D4FB200443833 /* SearchSectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSectionTableViewCell.h; sourceTree = "<group>"; };
+		01454FC6221D4FB200443833 /* SearchSectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSectionTableViewCell.m; sourceTree = "<group>"; };
+		01454FC7221D4FB200443833 /* SearchSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSectionTableViewCell.xib; sourceTree = "<group>"; };
+		01454FCA221D6C1100443833 /* SearchResultsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsService.h; sourceTree = "<group>"; };
+		01454FCB221D6C1100443833 /* SearchResultsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsService.m; sourceTree = "<group>"; };
+		01454FCD221D970100443833 /* MediaObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaObject.h; sourceTree = "<group>"; };
+		01454FCE221D970100443833 /* MediaObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaObject.m; sourceTree = "<group>"; };
+		01454FD0221D98D500443833 /* MediaObjectCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaObjectCollectionViewCell.h; sourceTree = "<group>"; };
+		01454FD1221D98D500443833 /* MediaObjectCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaObjectCollectionViewCell.m; sourceTree = "<group>"; };
+		01454FD2221D98D500443833 /* MediaObjectCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaObjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		01454FD7221D9FC900443833 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		01454FD8221D9FC900443833 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		01454FDA221D9FDA00443833 /* MusicTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicTrack.h; sourceTree = "<group>"; };
+		01454FDB221D9FDA00443833 /* MusicTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicTrack.m; sourceTree = "<group>"; };
+		01454FDD221DA40500443833 /* SearchSectionCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSectionCellViewModel.h; sourceTree = "<group>"; };
+		01454FDE221DA40500443833 /* SearchSectionCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSectionCellViewModel.m; sourceTree = "<group>"; };
+		01454FE0221DA46800443833 /* BaseCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCellViewModel.h; sourceTree = "<group>"; };
+		01454FE1221DA46800443833 /* BaseCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCellViewModel.m; sourceTree = "<group>"; };
+		01454FE4221DC2DC00443833 /* SearchResultsTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewModel.h; sourceTree = "<group>"; };
+		01454FE5221DC2DC00443833 /* SearchResultsTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewModel.m; sourceTree = "<group>"; };
+		01454FE8221EDCA800443833 /* MediaObjectCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaObjectCellViewModel.h; sourceTree = "<group>"; };
+		01454FE9221EDCA800443833 /* MediaObjectCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaObjectCellViewModel.m; sourceTree = "<group>"; };
+		01454FEB221FE78F00443833 /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		01454FEC221FE78F00443833 /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		01454FEE221FE7D300443833 /* SettingsAvatarTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsAvatarTableViewCell.h; sourceTree = "<group>"; };
+		01454FEF221FE7D300443833 /* SettingsAvatarTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsAvatarTableViewCell.m; sourceTree = "<group>"; };
+		01454FF0221FE7D300443833 /* SettingsAvatarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsAvatarTableViewCell.xib; sourceTree = "<group>"; };
+		01454FF3221FE85F00443833 /* SettingsAvatarCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsAvatarCellViewModel.h; sourceTree = "<group>"; };
+		01454FF4221FE85F00443833 /* SettingsAvatarCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsAvatarCellViewModel.m; sourceTree = "<group>"; };
+		01454FF6221FE98600443833 /* SettingsTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewModel.h; sourceTree = "<group>"; };
+		01454FF7221FE98600443833 /* SettingsTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewModel.m; sourceTree = "<group>"; };
+		01455003222017C500443833 /* SettingsAvatarTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsAvatarTableViewCellDelegate.h; sourceTree = "<group>"; };
+		014550042220181F00443833 /* MediaObjectCollectionViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaObjectCollectionViewCellDelegate.h; sourceTree = "<group>"; };
+		01455005222019C700443833 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		01455006222019C700443833 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		014550082220261A00443833 /* SectionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionType.h; sourceTree = "<group>"; };
+		0B4FFF6C5A21AA1698289E76 /* Pods-iTunes-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunes-API.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunes-API/Pods-iTunes-API.release.xcconfig"; sourceTree = "<group>"; };
+		653E153955C9F746CDF52FEF /* Pods_iTunes_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunes_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BABAF83C84DCF339F7F7E7 /* Pods-iTunes-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunes-API.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunes-API/Pods-iTunes-API.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01454FA0221AF55700443833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C909C40486C75AC2E48EA3E /* Pods_iTunes_API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01454F9A221AF55600443833 = {
+			isa = PBXGroup;
+			children = (
+				01454FA5221AF55700443833 /* iTunes-API */,
+				01454FA4221AF55700443833 /* Products */,
+				776974C95FAFBE963644BD59 /* Pods */,
+				641CBD9AF09436639C4E6EB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01454FA4221AF55700443833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01454FA3221AF55700443833 /* iTunes-API.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01454FA5221AF55700443833 /* iTunes-API */ = {
+			isa = PBXGroup;
+			children = (
+				01454FA6221AF55700443833 /* AppDelegate.h */,
+				01454FA7221AF55700443833 /* AppDelegate.m */,
+				01455009222029B400443833 /* Service */,
+				01454FFC221FEA2200443833 /* TableViewModels */,
+				01454FFD221FEA3F00443833 /* TableViewControllers */,
+				01454FE3221DA47100443833 /* CellViewModels */,
+				01454FD5221D98EA00443833 /* Cells */,
+				0145500A222029BB00443833 /* Supporting Files */,
+				01454FD6221D998500443833 /* Model */,
+				01454FAC221AF55700443833 /* Main.storyboard */,
+				01454FAF221AF55B00443833 /* Assets.xcassets */,
+				01454FB1221AF55B00443833 /* LaunchScreen.storyboard */,
+				01454FB4221AF55B00443833 /* Info.plist */,
+				01454FB5221AF55B00443833 /* main.m */,
+			);
+			path = "iTunes-API";
+			sourceTree = "<group>";
+		};
+		01454FD5221D98EA00443833 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				014550042220181F00443833 /* MediaObjectCollectionViewCellDelegate.h */,
+				01454FD0221D98D500443833 /* MediaObjectCollectionViewCell.h */,
+				01454FD1221D98D500443833 /* MediaObjectCollectionViewCell.m */,
+				01454FD2221D98D500443833 /* MediaObjectCollectionViewCell.xib */,
+				01454FC5221D4FB200443833 /* SearchSectionTableViewCell.h */,
+				01454FC6221D4FB200443833 /* SearchSectionTableViewCell.m */,
+				01454FC7221D4FB200443833 /* SearchSectionTableViewCell.xib */,
+				01455003222017C500443833 /* SettingsAvatarTableViewCellDelegate.h */,
+				01454FEE221FE7D300443833 /* SettingsAvatarTableViewCell.h */,
+				01454FEF221FE7D300443833 /* SettingsAvatarTableViewCell.m */,
+				01454FF0221FE7D300443833 /* SettingsAvatarTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		01454FD6221D998500443833 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01454FCD221D970100443833 /* MediaObject.h */,
+				01454FCE221D970100443833 /* MediaObject.m */,
+				01454FD7221D9FC900443833 /* Movie.h */,
+				01454FD8221D9FC900443833 /* Movie.m */,
+				01454FDA221D9FDA00443833 /* MusicTrack.h */,
+				01454FDB221D9FDA00443833 /* MusicTrack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01454FE3221DA47100443833 /* CellViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01454FE0221DA46800443833 /* BaseCellViewModel.h */,
+				01454FE1221DA46800443833 /* BaseCellViewModel.m */,
+				01454FE8221EDCA800443833 /* MediaObjectCellViewModel.h */,
+				01454FE9221EDCA800443833 /* MediaObjectCellViewModel.m */,
+				01454FDD221DA40500443833 /* SearchSectionCellViewModel.h */,
+				01454FDE221DA40500443833 /* SearchSectionCellViewModel.m */,
+				01454FF3221FE85F00443833 /* SettingsAvatarCellViewModel.h */,
+				01454FF4221FE85F00443833 /* SettingsAvatarCellViewModel.m */,
+			);
+			path = CellViewModels;
+			sourceTree = "<group>";
+		};
+		01454FFC221FEA2200443833 /* TableViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				01454FE4221DC2DC00443833 /* SearchResultsTableViewModel.h */,
+				01454FE5221DC2DC00443833 /* SearchResultsTableViewModel.m */,
+				01454FF6221FE98600443833 /* SettingsTableViewModel.h */,
+				01454FF7221FE98600443833 /* SettingsTableViewModel.m */,
+			);
+			path = TableViewModels;
+			sourceTree = "<group>";
+		};
+		01454FFD221FEA3F00443833 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				01454FC2221D4F9700443833 /* SearchResultsViewController.h */,
+				01454FC3221D4F9700443833 /* SearchResultsViewController.m */,
+				01454FEB221FE78F00443833 /* SettingsTableViewController.h */,
+				01454FEC221FE78F00443833 /* SettingsTableViewController.m */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		01455009222029B400443833 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				01454FCA221D6C1100443833 /* SearchResultsService.h */,
+				01454FCB221D6C1100443833 /* SearchResultsService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0145500A222029BB00443833 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				014550082220261A00443833 /* SectionType.h */,
+				01455005222019C700443833 /* Constants.h */,
+				01455006222019C700443833 /* Constants.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		641CBD9AF09436639C4E6EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				653E153955C9F746CDF52FEF /* Pods_iTunes_API.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776974C95FAFBE963644BD59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68BABAF83C84DCF339F7F7E7 /* Pods-iTunes-API.debug.xcconfig */,
+				0B4FFF6C5A21AA1698289E76 /* Pods-iTunes-API.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01454FA2221AF55700443833 /* iTunes-API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01454FB9221AF55B00443833 /* Build configuration list for PBXNativeTarget "iTunes-API" */;
+			buildPhases = (
+				BB17C4136E68AAB21C83DBD4 /* [CP] Check Pods Manifest.lock */,
+				01454F9F221AF55700443833 /* Sources */,
+				01454FA0221AF55700443833 /* Frameworks */,
+				01454FA1221AF55700443833 /* Resources */,
+				92F7CA501A3C01F5AACFCBD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTunes-API";
+			productName = "iTunes-API";
+			productReference = 01454FA3221AF55700443833 /* iTunes-API.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01454F9B221AF55600443833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ilya Egorov";
+				TargetAttributes = {
+					01454FA2221AF55700443833 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 01454F9E221AF55600443833 /* Build configuration list for PBXProject "iTunes-API" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01454F9A221AF55600443833;
+			productRefGroup = 01454FA4221AF55700443833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01454FA2221AF55700443833 /* iTunes-API */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01454FA1221AF55700443833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01454FB3221AF55B00443833 /* LaunchScreen.storyboard in Resources */,
+				01454FC9221D4FB200443833 /* SearchSectionTableViewCell.xib in Resources */,
+				01454FD4221D98D500443833 /* MediaObjectCollectionViewCell.xib in Resources */,
+				01454FF2221FE7D300443833 /* SettingsAvatarTableViewCell.xib in Resources */,
+				01454FB0221AF55B00443833 /* Assets.xcassets in Resources */,
+				01454FAE221AF55700443833 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92F7CA501A3C01F5AACFCBD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunes-API/Pods-iTunes-API-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunes-API/Pods-iTunes-API-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB17C4136E68AAB21C83DBD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunes-API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01454F9F221AF55700443833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01454FF8221FE98600443833 /* SettingsTableViewModel.m in Sources */,
+				01454FF1221FE7D300443833 /* SettingsAvatarTableViewCell.m in Sources */,
+				01454FED221FE78F00443833 /* SettingsTableViewController.m in Sources */,
+				01454FB6221AF55B00443833 /* main.m in Sources */,
+				01454FCC221D6C1100443833 /* SearchResultsService.m in Sources */,
+				01454FF5221FE85F00443833 /* SettingsAvatarCellViewModel.m in Sources */,
+				01454FD9221D9FC900443833 /* Movie.m in Sources */,
+				01454FA8221AF55700443833 /* AppDelegate.m in Sources */,
+				01454FE6221DC2DC00443833 /* SearchResultsTableViewModel.m in Sources */,
+				01454FE2221DA46800443833 /* BaseCellViewModel.m in Sources */,
+				01454FD3221D98D500443833 /* MediaObjectCollectionViewCell.m in Sources */,
+				01454FDF221DA40500443833 /* SearchSectionCellViewModel.m in Sources */,
+				01454FC4221D4F9700443833 /* SearchResultsViewController.m in Sources */,
+				01454FDC221D9FDA00443833 /* MusicTrack.m in Sources */,
+				01454FC8221D4FB200443833 /* SearchSectionTableViewCell.m in Sources */,
+				01454FCF221D970100443833 /* MediaObject.m in Sources */,
+				01454FEA221EDCA800443833 /* MediaObjectCellViewModel.m in Sources */,
+				01455007222019C700443833 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01454FAC221AF55700443833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01454FAD221AF55700443833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01454FB1221AF55B00443833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01454FB2221AF55B00443833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01454FB7221AF55B00443833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01454FB8221AF55B00443833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01454FBA221AF55B00443833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BABAF83C84DCF339F7F7E7 /* Pods-iTunes-API.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF8K3X2JYP;
+				INFOPLIST_FILE = "iTunes-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Egorov.iTunes-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01454FBB221AF55B00443833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FFF6C5A21AA1698289E76 /* Pods-iTunes-API.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF8K3X2JYP;
+				INFOPLIST_FILE = "iTunes-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ilya-Egorov.iTunes-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01454F9E221AF55600443833 /* Build configuration list for PBXProject "iTunes-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01454FB7221AF55B00443833 /* Debug */,
+				01454FB8221AF55B00443833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01454FB9221AF55B00443833 /* Build configuration list for PBXNativeTarget "iTunes-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01454FBA221AF55B00443833 /* Debug */,
+				01454FBB221AF55B00443833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01454F9B221AF55600443833 /* Project object */;
+}
